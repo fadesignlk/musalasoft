@@ -3,7 +3,6 @@ const { Gateway, PeripheralDevice } = require('../models/models');
 module.exports = {
     homeInfo: async(req, res) => {
         try {
-            res.send('Welcome to MUSALA Soft Gateway REST API');
             res.send('Add /gateways at the end of the url to get all the gateway details')
         } catch (error) {
             res.status(400).send(error.message);
