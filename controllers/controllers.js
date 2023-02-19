@@ -86,8 +86,8 @@ module.exports = {
             } else if (!gateway) {
               res.status(404).send('Gateway not found.');
             } else {
-              gateway.delete()
-              res.send(gateway);
+            const g1 = gateway.delete()
+              res.send(g1);
             }
         });
     }
