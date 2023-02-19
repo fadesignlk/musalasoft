@@ -3,9 +3,6 @@ const Controller = require('../controllers/controllers')
 
 const router = express.Router();
 
-// Home directory
-router.get('/', Controller.homeInfo);
-
 // GET all gateways and their associated devices
 router.get('/gateways', Controller.getAllGateways);
 
