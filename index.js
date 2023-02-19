@@ -9,6 +9,7 @@ const dbURI = 'mongodb+srv://faaz:faaz2662@cluster0.2owdi.mongodb.net/node-tuts?
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
+mongoose.set('strictQuery', false);
 mongoose.connect(dbURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
