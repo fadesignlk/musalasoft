@@ -1,13 +1,6 @@
 const { Gateway, PeripheralDevice } = require('../models/models');
 
 module.exports = {
-    homeInfo: async(req, res) => {
-        try {
-            res.send('Add /gateways at the end of the url to get all the gateway details')
-        } catch (error) {
-            res.status(400).send(error.message);
-        }
-    },
     createGateway: async(req, res) => {
         try {
             const gateway = new Gateway(req.body);
